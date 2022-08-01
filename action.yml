@@ -1,0 +1,76 @@
+name: 'Find Github User'
+description: 'Find a user based on Github'
+inputs:
+  username:  # id of input
+    description: 'User to be found'
+    required: true
+    default: 'torvalds'
+
+outputs:
+  username:
+    description: 'The username of the user'
+  id:
+    description: 'The id of the user'
+  node_id:
+    description: 'The node_id of the user'
+  avatar_url:
+    description: 'The avatar_url of the user'
+  gravatar_id:
+    description: 'The gravatar_id of the user'
+  url:
+    description: 'The url of the user'
+  html_url:
+    description: 'The html_url of the user'
+  followers_url:
+    description: 'The followers_url of the user'
+  following_url:
+    description: 'The following_url of the user'
+  gists_url:
+    description: 'The gists_url of the user'
+  starred_url:
+    description: 'The starred_url of the user'
+  subscriptions_url:
+    description: 'The subscriptions_url of the user'
+  organizations_url:
+    description: 'The organizations_url of the user'
+  repos_url:
+    description: 'The repos_url of the user'
+  events_url:
+    description: 'The events_url of the user'
+  received_events_url:
+    description: 'The received_events_url of the user'
+  type:
+    description: 'The type of the user'
+  site_admin:
+    description: 'The site_admin of the user'
+  name:
+    description: 'The name of the user'
+  company:
+    description: 'The company of the user'
+  blog:
+    description: 'The blog of the user'
+  location:
+    description: 'The location of the user'
+  email:
+    description: 'The email of the user'
+  hireable:
+    description: 'The hireable of the user'
+  bio:
+    description: 'The bio of the user'
+  twitter_username:
+    description: 'The twitter_username of the user'
+  public_repos:
+    description: 'The public_repos of the user'
+  public_gists:
+    description: 'The public_gists of the user'
+  followers:
+    description: 'The followers of the user'
+  following:
+    description: 'The following of the user'
+  created_at:
+    description: 'The created_at of the user'
+  updated_at:
+    description: 'The description of the user'
+runs:
+  using: 'node16'
+  main: 'index.js'
