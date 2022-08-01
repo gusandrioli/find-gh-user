@@ -9,6 +9,27 @@ with:
   username: 'torvalds'
 ```
 
+## Example workflow
+```yml
+on: [push]
+
+jobs:
+  hello_world_job:
+    runs-on: ubuntu-latest
+    name: Find user on Github
+    steps:
+      - name: Find user
+        id: find-gh-user
+        uses: gusandrioli/find-gh-user@v1.0.4
+        with:
+          username: 'torvalds'
+
+      - name: Get user
+        run: |
+          echo ${{ steps.find-gh-user.outputs.company }}
+          echo ${{ steps.find-gh-user.outputs.username }}
+```
+
 ## Inputs
 
 - `username`
