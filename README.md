@@ -20,7 +20,7 @@ jobs:
     steps:
       - name: Find user
         id: find-gh-user
-        uses: gusandrioli/find-gh-user@v1.0.4
+        uses: gusandrioli/find-gh-user@v1.0.0
         with:
           username: 'torvalds'
 
